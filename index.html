@@ -745,22 +745,37 @@
 }
 
 .sosmed-icons a {
-  font-size: 28px;
-  padding: 15px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
   border-radius: 50%;
-  color: #fff;
+
+  background: #f1f1f1;
+  color: #555;
+
+  box-shadow: 
+    6px 6px 12px rgba(0,0,0,0.1),
+    -6px -6px 12px rgba(255,255,255,0.8);
+
   transition: 0.3s;
 }
 
-/* WARNA SOSMED */
-.sosmed-icons a:nth-child(1) { background: #E1306C; }
-.sosmed-icons a:nth-child(2) { background: #25D366; }
-.sosmed-icons a:nth-child(3) { background: #000000; }
-.sosmed-icons a:nth-child(4) { background: #1877F2; }
+/* WARNA ICON (bukan background) */
+.sosmed-icons a:nth-child(1) i { color: #E1306C; } /* IG */
+.sosmed-icons a:nth-child(2) i { color: #25D366; } /* WA */
+.sosmed-icons a:nth-child(3) i { color: #000; } /* TikTok */
+.sosmed-icons a:nth-child(4) i { color: #1877F2; } /* FB */
 
+/* HOVER */
 .sosmed-icons a:hover {
-  transform: scale(1.2);
-  opacity: 0.85;
+  transform: translateY(-5px);
+  box-shadow: 
+    3px 3px 6px rgba(0,0,0,0.15),
+    -3px -3px 6px rgba(255,255,255,0.8);
 }
 
 .sosmed-icons a:hover {
